@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Primary: Deep Pine */
+  --color-pine-900: #0f2e23;
+  --color-pine-800: #1b4d3e;
+  --color-pine-700: #246350;
+  --color-pine-600: #2d7a62;
+  --color-pine-500: #3b9b7d;
+
+  /* Accent: Ember Orange */
+  --color-ember-600: #c25e1a;
+  --color-ember-500: #e06d20;
+  --color-ember-400: #f48d42;
+
+  /* Neutrals: Granite, Slate & Snow */
+  --color-granite-900: #121516;
+  --color-granite-800: #1f2427;
+  --color-granite-700: #3a4043;
+  --color-granite-300: #d1d5db;
+  --color-granite-100: #f3f4f6;
+  --color-snow: #f9fafb;
+
+  /* Semantic Feedback */
+  --color-success: #15803d;
+  --color-warning: #b45309;
+  --color-danger:  #b91c1c;
+
+  --background: var(--color-snow);
+  --foreground: var(--color-granite-900);
+}
+
+@theme inline {
+  --color-primary-900: var(--color-pine-900);
+  --color-primary-800: var(--color-pine-800);
+  --color-primary-600: var(--color-pine-600);
+  --color-primary-500: var(--color-pine-500);
+
+  --color-accent-600: var(--color-ember-600);
+  --color-accent-500: var(--color-ember-500);
+  --color-accent-400: var(--color-ember-400);
+
+  --color-granite-900: var(--color-granite-900);
+  --color-granite-700: var(--color-granite-700);
+  --color-granite-300: var(--color-granite-300);
+  --color-granite-100: var(--color-granite-100);
+
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-danger: var(--color-danger);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+}
